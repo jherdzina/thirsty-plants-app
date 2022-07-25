@@ -20,3 +20,4 @@
 
 ### Super Stretch Goals (after class goal)
 ##### Hook up to a plant API
+##### Give your plants alias' or names (Fred the Fiddle Leaf Fig)
