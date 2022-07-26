@@ -1,7 +1,7 @@
 # Thirsty Plants App
 #
 ### POC
-#### An app for tracking your houseplant watering schedule, reminds you to water if its been too long since you check in, track your fertizing schedule and look up facts about your house plants.  
+#### An app for tracking your houseplant watering schedule, reminds you to water if its been too long since you checked in, track your fertizing schedule and look up facts about your house plants.
 #
 ### MVP
 ##### Database in MongoDB
