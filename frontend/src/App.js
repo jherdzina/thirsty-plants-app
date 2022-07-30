@@ -2,16 +2,16 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link, Navigate, useLocation } from "react-router-dom";
 import Userfront from "@userfront/react";
 
-Userfront.init("demo1234");
+Userfront.init("8b68mprb");
 
 const SignupForm = Userfront.build({
-  toolId: "nkmbbm",
+  toolId: "bnbrdb",
 });
 const LoginForm = Userfront.build({
-  tookId: "alnkkd",
+  tookId: "okodrr",
 });
 const PasswordResetForm = Userfront.build({
-  toolId: "dkbmmo",
+  toolId: "kaonka",
 })
 
 
@@ -62,6 +62,14 @@ function Home() {
       </div>
   );
 }
+
+
+  // const userData = JSON.stringify(Userfront.user, null, 2);
+  // Userfront.login({
+  //   method: "password",
+  //   email: userData.email,
+  //   password: userData.password,
+  // });
 
 function Login() {
   return (
