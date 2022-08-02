@@ -1,6 +1,8 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link, Navigate, useLocation } from "react-router-dom";
-import Userfront from "@userfront/react";
+import React from 'react';
+import './styles.css';
+import { BrowserRouter as Router, Routes, Route, Link, Navigate, useLocation } from 'react-router-dom';
+import Userfront from '@userfront/react';
+import NavBar from './components/NavBar.js';
 
 Userfront.init("8b68mprb");
 
@@ -8,7 +10,7 @@ const SignupForm = Userfront.build({
   toolId: "bnbrdb",
 });
 const LoginForm = Userfront.build({
-  tookId: "okodrr",
+  toolId: "okodrr",
 });
 const PasswordResetForm = Userfront.build({
   toolId: "kaonka",
@@ -19,7 +21,7 @@ export default function App() {
   return (
     <Router>
       <div>
-        <nav>
+        {/* <NavBar> */}
           <ul>
             <li>
               <Link to="/">Home</Link>
@@ -34,10 +36,10 @@ export default function App() {
               <Link to="/dashboard">Dashboard</Link>
             </li>
           </ul>
-        </nav>
-
+        {/* </NavBar> */}
+        
          <Routes>
-          <Route path="/" element={<Home />} />
+          
           <Route path="/login" element={<Login />} />
           <Route path="/reset" element={<PasswordReset />} />
           <Route
@@ -48,6 +50,7 @@ export default function App() {
               </RequireAuth>
             }
           />
+          <Route path="/" element={<Home />} />
         </Routes>
       </div>
     </Router>
