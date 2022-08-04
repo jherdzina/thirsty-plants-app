@@ -5,8 +5,10 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import plantWatered from '../utilities/userfront.js';
 
 export default function PlantCard() {
+  // you'll want props to put your info into the title, img, ect - that info may come from app, not here
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
@@ -17,14 +19,21 @@ export default function PlantCard() {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          Fiddle Leaf Fig
         </Typography>
         <Typography variant="body2" color="text.secondary">
           
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
+        {/* 
+
+          Back End:
+            backEndFunc(plantWatered)
+                let NewWaterDate = today
+                mongodb wayToWriteYourUser'sNewWaterDate // This is to store for the user for next time
+        */}
+        <Button size="small" onClick={plantWatered}>Watered</Button>
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card>

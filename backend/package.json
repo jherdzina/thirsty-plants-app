@@ -117,6 +117,9 @@
     "webidl-conversions": "^7.0.0",
     "whatwg-url": "^11.0.0"
   },
+  "bin": {
+    "plant-watered": "backend/controllers/userfront"
+  },
   "scripts": {
     "start": "nodemon index.js"
   },
