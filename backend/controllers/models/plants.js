@@ -1,11 +1,15 @@
 const mongoose = require("mongoose");
 
 const plantSchema = new mongoose.Schema({
-    plantName: { type: String, required: true },
+    plantType: { type: String, required: true },
+    plantName: { type: String },
     imageURL: { type: String },
-    room: { type: String },
-    wateredLast: { },
-    waterSchedule: { }
+    roomLocated: { type: String },
+    wateredLast: { 
+        type: Date,
+        default: new Date()
+    },
+    waterSchedule: { type: String }
 })
 
 module.exports = mongoose.model(plantSchema)

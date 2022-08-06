@@ -6,6 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import plantWatered from '../utilities/userfront.js';
+import { testPost } from '../api/index.js';
 
 export default function PlantCard() {
   // you'll want props to put your info into the title, img, ect - that info may come from app, not here
@@ -33,7 +34,7 @@ export default function PlantCard() {
                 let NewWaterDate = today
                 mongodb wayToWriteYourUser'sNewWaterDate // This is to store for the user for next time
         */}
-        <Button size="small" onClick={plantWatered}>Watered</Button>
+        <Button size="small" onClick={testPost}>Watered</Button>
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card>

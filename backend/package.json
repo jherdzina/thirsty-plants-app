@@ -1,6 +1,9 @@
 {
   "name": "backend",
   "version": "1.0.0",
+  "engines": {
+    "node": "v14.18.1, npm: '8.13.2'c"
+  },
   "description": "",
   "main": "index.js",
   "type": "module",
@@ -121,7 +124,8 @@
     "plant-watered": "backend/controllers/userfront"
   },
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "proxy": "http://localhost:5001"
   },
   "keywords": [],
   "author": "",
